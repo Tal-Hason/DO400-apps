@@ -1,6 +1,6 @@
 pipeline {
     agent { node { label 'maven' } }
-    environment { APP_NAMESPACE = 'RHT_OCP4_DEV_USER-security-scans' }
+    environment { APP_NAMESPACE = 'thason-security-scans' }
     stages {
         stage('Test') {
             steps {

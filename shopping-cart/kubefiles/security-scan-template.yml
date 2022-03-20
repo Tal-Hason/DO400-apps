@@ -17,7 +17,7 @@ objects:
         spec:
           containers:
             - name: ${APP_NAME}-trivy
-              image: image-registry.openshift-image-registry.svc:5000/${PROJECT_NAME}/${APP_NAME}
+              image: image-registry.openshift-image-registry.svc.cluster.local.svc:5000/${PROJECT_NAME}/${APP_NAME}
               command: [ "/bin/sh" ]
               args:
                 - -c
