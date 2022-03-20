@@ -12,7 +12,7 @@ pipeline {
     stage('Deploy') {
         steps {
             sh '''
-                oc start-build greeting-metrics --follow --wait -n RHT_OCP4_DEV_USER-metrics
+                oc start-build greeting-metrics --follow --wait -n thason-metrics
             '''
             }
         }
