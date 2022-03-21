@@ -26,6 +26,7 @@ pipeline {
                             } catch (Exception e) {
                                 sendWarningAlert("${STAGE_NAME}", 'devs@example.com')
                                 unstable("${STAGE_NAME} stage failed!")
+                        }
                     }
                 }
             }
