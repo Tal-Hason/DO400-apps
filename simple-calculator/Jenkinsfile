@@ -21,7 +21,8 @@ pipeline {
                 steps {
                     script {
                         try {
-                            sh './mvnw clean checkstyle:check'
+                            dir('simple-calculator')
+                                sh './mvnw clean checkstyle:check'
                         } catch (Exception e) {
                             sendWarningAlert("${STAGE_NAME}", 'devs@example.com')
                             unstable("${STAGE_NAME} stage failed!")
