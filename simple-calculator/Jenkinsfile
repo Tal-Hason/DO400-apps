@@ -19,7 +19,7 @@ pipeline {
         }   
            stage('Check Style') {
                 steps {
-                    dir('simple-calculator')
+                    dir('simple-calculator') {
                         script {
                             try {
                                 sh './mvnw clean checkstyle:check'
