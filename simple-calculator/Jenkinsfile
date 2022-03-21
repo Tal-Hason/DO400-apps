@@ -6,7 +6,7 @@ pipeline {
             stage('Checkout') {
                 steps {
                     git branch: 'notifications',
-                            url: 'https://github.com/YOUR_GITHUB_USER/DO400-apps'
+                            url: 'https://github.com/Tal-Hason/DO400-apps.git'
             }
         }
             stage('Test') {
